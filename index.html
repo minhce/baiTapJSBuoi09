@@ -113,7 +113,7 @@
 								<h3 class="text-left text-primary font-weight-bold">Danh sách nhân viên</h3>
 							</div>
 							<div class="col-md-6 text-right">
-								<button class="btn btn-primary" id="btnThem" data-toggle="modal"
+								<button onclick="resetForm()" class="btn btn-primary" id="btnThem" data-toggle="modal"
 									data-target="#myModal">Thêm nhân viên</button>
 							</div>
 						</div>
@@ -288,8 +288,8 @@
 
 				<!-- Modal footer -->
 				<div class="modal-footer" id="modal-footer">
-					<button id="btnThemNV" type="button" class="btn btn-success">Thêm người dùng</button>
-					<button id="btnCapNhat" type="button" class="btn btn-success">Cập nhật</button>
+					<button onclick="themNhanVien()" id="btnThemNV" type="button" class="btn btn-success">Thêm người dùng</button>
+					<button onclick="updateNV()" style="display: none" id="btnCapNhat" type="button" class="btn btn-success" data-dismiss="modal">Cập nhật</button>
 					<button id="btnDong" type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
 				</div>
 
@@ -324,6 +324,11 @@
 			});
 		});
 	</script>
+
+	<script src="./js/nhanvien.js"></script>
+	<script src="./js/dsnv.js"></script>
+	<script src="./js/validation.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
